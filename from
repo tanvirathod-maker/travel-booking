@@ -1,0 +1,45 @@
+def search_action():
+    user_input =search_entry.get()
+    messagebox.showinfo("searche the result for :{user_input}")
+
+    #create the window
+    root = tk.Tk()
+    root.title("simple button app")
+    #lable
+    tk.lable(root,text="search what you want :").pack(pady=5)
+    #search input field
+    search_entry = tk.Entry(root,width=30)
+    search_enty.pack()
+    #search button
+    search_button =tk.button(root,text="search",command=search_action)
+    search_button =tk.button.pack(pady=10)
+    #run the window
+    root.mainloop()
+
+def travel_agency_from():
+    print("welcome to travel agency!!!!")
+    
+    #details fill 
+
+name=input("enter the name :")
+age=int(input("enter the age :"))
+gender = input("enter the gender :")
+if gender.lower() == "female":
+   print("you are book to spcial set available")
+elif gender.lower() == "male":
+    print("good luck for next time")
+
+passport =input("do you have vaild passport?(yes/no):")
+if passport.lower() == "yes":
+     print("you are valid to the international travel")
+else:
+     print("you have not allowed for internation travel")
+
+traveldestination =input("enter the travel destination name :")
+traveldate=input("enter the date :")
+days=input("number of days you want to stay :")
+
+email=input("enter the email :")
+print("you got the your ticket in {email}")
+print("thank you to visiting!! :") 
+print("your from is submitted successfully-----")
